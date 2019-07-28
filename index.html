@@ -1,38 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Friends V2</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio</title>
+
+    <!--<link rel="icon" href="images/favicon.jpg">-->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css" media="screen"/>
+    <!-- Pace -->
+    <link rel="stylesheet" href="css/pace/preloader.css" media="screen">
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate/animate.css" type="text/css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="css/fonts/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" media="screen"/>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600,700,800" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- Skin CSS -->
+    <!-- <link href="css/skin/purple/style.css" rel="stylesheet" media="screen"> -->
 </head>
+
 <body>
-<div class="container">
-
-    <h2>Let’s Build</h2>
-
-    <h1>We are Group of Geeks in cosmos.</h1>
-
-    <h5>Maybe in Baku.</h5>
-
-    <div>
-        <img src="assets/img/leyli.png" alt="member" class="team-member-img">
-        <img src="assets/img/leyli.png" alt="member" class="team-member-img">
-        <img src="assets/img/leyli.png" alt="member" class="team-member-img">
+<!--PRELOADER-->
+<div id="page-preloader">
+    <div class="align-middle">
+        <div class="v-align -oncenter">
+            <div class="spinner"></div>
+        </div>
     </div>
+</div> <!--END of PRELOADER-->
 
+<!-- CONTENT -->
+<div id="page-content" class="animated fadeIn">
+    <div class="container">
+
+        <div class="bg-div">
+            <!-- Home Title -->
+            <div id="home-title" class="row -rowmargin">
+                <div class="col-md-12 text-center">
+                    <h2 style="font-size: 24px; font-weight: 400">Let's Build</h2>
+                    <h1 class="nomargin" style="font-size: 34px">We are Group of Geeks in cosmos.</h1>
+                    <h5 style="color: #C4A2DE">Maybe in Baku</h5>
+                </div>
+            </div>    <!--End of Home Title -->
+
+            <!-- Photo -->
+            <div id="home-photo" class="row -rowmargin">
+                <div class="col-md-3">
+                    <div class="photo-item -marginbottom">
+                        <div class="overlay-caption">
+                            <div class="align-middle">
+                                <div class="v-align -oncenter">
+                                    <div class="phototitle">Ziyaddin Sadigov</div>
+                                    <div class="photocaption">Back-End Developer</div>
+                                    <a href="https://drive.google.com/open?id=1hchnQfsYRaElNw-qp0gatsvuBYNq877-"
+                                       class="default-button" target="_blank">view CV</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/ziyaddin.jpg" alt="" class="fullwidth">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="photo-item -marginbottom">
+                        <div class="overlay-caption">
+                            <div class="align-middle">
+                                <div class="v-align -oncenter">
+                                    <div class="phototitle">Leyli Abbasova</div>
+                                    <div class="photocaption">Front-End Developer</div>
+                                    <a href="https://drive.google.com/open?id=1zwm75-v7BnlRubKdCAHIphI9zZ8z88F_"
+                                       class="default-button" target="_blank">view CV</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/leyli.jpg" alt="" class="fullwidth">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="photo-item -marginbottom">
+                        <div class="overlay-caption">
+                            <div class="align-middle">
+                                <div class="v-align -oncenter">
+                                    <div class="phototitle">Firuze Pashazade</div>
+                                    <div class="photocaption">Designer</div>
+                                    <a href="https://drive.google.com/open?id=1ZD8rpxRq07ta4yW2XGK4NGKIF1KQJ5Au"
+                                       class="default-button" target="_blank">view CV</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/firuza.jpg" alt="" class="fullwidth">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="photo-item -marginbottom">
+                        <div class="overlay-caption">
+                            <div class="align-middle">
+                                <div class="v-align -oncenter">
+                                    <div class="phototitle">Gulnar Faganli</div>
+                                    <div class="photocaption">Front-End Developer</div>
+                                    <a href="https://drive.google.com/open?id=1Bh0wuva7hlr4XqWFpFrKqyBWMWiIKF5J"
+                                       class="default-button" target="_blank">view CV</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/gulnar.jpg" alt="" class="fullwidth">
+                    </div>
+                </div>
+            </div> <!--End of Photo -->
+        </div>
+
+        <!-- Call Action -->
+        <div id="home-action" class="row">
+            <div class="col-md-12 text-center">
+                <h1 style="font-size: 34px">Portfolio</h1>
+            </div>
+        </div> <!--End of Call Action -->
+
+        <div class="container">
+            <ul>
+                <li>
+                    Mammadov, S., Rustamov, S., Mustafali, A., Sadigov, Z., Mollayev, R., Mammadov. Z. (2018, October).
+                    Part- of-Speech Tagging for Azerbaijani Language. IEEE 12th International Conference on Application
+                    of Information and Communication Technologies Conference Proceedings. Almaty, Kazakhstan. (Ziyaddin
+                    Sadigov, Samir Mammadov)
+                </li>
+                <li>
+                    “Security state of end hosts in Azerbaijan” – Virtustech Research Team, 2017. (Ziyaddin Sadigov)
+                </li>
+                <li>
+                    “Bayraq” – developed Android application for overlaying profile pictures with Azerbaijani flag.
+                    (Ziyaddin Sadigov)
+                </li>
+                <li>
+                    “Qaynar Xətt” – developed Android application containing emergency numbers of the Republic of
+                    Azerbaijan. (Ziyaddin Sadigov)
+                </li>
+                <li>
+                    "Booglo" - an online service which consists of different flower shops, cake houses and gift stores,
+                    <a href="https://booglo.com/">Click to view</a>.
+                    (Firuza Pashazade, Leyli Abbasova, Gulnar Faganli)
+                </li>
+                <li>
+                    “Facial Landmarks” – train your app to recognise faces, <a href="http://faciallandmarks.com/">Click
+                    to view</a>. (Leyli Abbasova)
+                </li>
+                <li>
+                    “East Park” – East Park is a premium-level residential complex offering high living standards,
+                    original architecture, suitable accommodation and extensive facilities., <a
+                        href="http://eastpark.az/">Click to view</a>. (Leyli Abbasova)
+                </li>
+                <li>
+                    “Alphajin” – Alphajin lets you find books quickly and brings an ultimate solution for mobile
+                    platforms and web, where everybody can easily share and find a lot of books. (Leyli Abbasova)
+                </li>
+            </ul>
+        </div>
+
+    </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+<div>
+    <img src="images/footer_bg.png" alt="bg" width="100%">
+</div>
+
+
+<!-- jQuery -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Pace -->
+<script src="js/pace/pace.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- Device JS -->
+<script src="js/devicejs/device.min.js"></script>
+<!-- Custom Core Script -->
+<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>

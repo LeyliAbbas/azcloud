@@ -1,0 +1,1118 @@
+@charset "utf-8";
+/*============================== 
+	- Template Name: Bleurant - Responsive HTML Creative Team and Portfolio Template
+	- Author: DoubleEight
+	- Version: 1.0.0
+	- Website: themeforest.net/user/doubleeight/portfolio
+================================= */
+
+/*---------------------- 
+	Stylesheet Guide
+------------------------
+00. PRELOADER
+
+01. GENERAL
+
+02. NAV BAR
+	02.1 Logo
+	02.2 Menu Icon
+	02.3 Navigation
+	
+03. CONTENT
+
+04. FOOTER
+
+05. ELEMENT
+    05.1 Photo Item
+	05.2 Align Middle Wrapper
+	05.3 Button
+
+07. CLIENT PAGE
+	
+08. CONTACT PAGE
+
+09. PROJECT PAGE
+	
+99. MEDIA SCREEN
+ 	- @media screen and (max-width: 1600px)
+	- @media screen and (max-width: 1366px)
+	- @media screen and (max-width: 1200px)
+	- @media screen and (max-width: 991px)
+	- @media screen and (max-width: 480px)
+
+*/
+
+/*===============================================*/
+/* 00. PRELOADER		 						 */
+/*===============================================*/
+/* See: */
+/* - preloader.css */
+
+/*===============================================*/
+/* 01. GENERAL	  		 						 */
+/*===============================================*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 63px;
+    color: #560C90;
+    margin-bottom: 36px;
+}
+
+h2 {
+    font-size: 54px;
+    margin-bottom: 36px;
+    color: #560C90;
+}
+
+h1, h2 {
+    margin-top: 0;
+    font-weight: 800;
+}
+
+p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 54px;
+    margin-bottom: 50px;
+}
+
+a, a:hover, a:active, a:focus {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.-rowmargin {
+    margin-bottom: 130px;
+}
+
+.-rowmargin.-desktopnomargin {
+    margin-bottom: 0px;
+}
+
+.-rowmarginhalf {
+    margin-bottom: 65px;
+}
+
+.-rowmarginhalf.-desktopnomargin {
+    margin-bottom: 0px;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.nomargintop {
+    margin-top: 0 !important;
+}
+
+.nomarginbottom {
+    margin-bottom: 0 !important;
+}
+
+.-extrabold {
+    font-weight: 800;
+}
+
+.-bold {
+    font-weight: 700;
+}
+
+.-semibold {
+    font-weight: 600;
+}
+
+.-medium {
+    font-weight: 500;
+}
+
+.grid-4 {
+    float: left;
+    width: 25%;
+}
+
+.grid-3 {
+    float: left;
+    width: 33.3%;
+}
+
+/*===============================================*/
+/* 02. NAV BAR	  		 						 */
+/*===============================================*/
+#nav-bar {
+    padding: 18px 34px 4px 34px;
+}
+
+/* 02.1 Logo	  		 						 */
+/*-----------------------------------------------*/
+#logo {
+    float: left;
+    width: 50%;
+    font-weight: 700;
+    font-size: 33px;
+}
+
+/* 02.2 Menu Icon  		 						 */
+/*-----------------------------------------------*/
+#menu-wrapper {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+#bar-wrapper {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.bar {
+    height: 4px;
+    width: 32px;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    opacity: 1;
+    webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#menu-icon:hover .bar {
+    opacity: 0.7;
+    width: 37px;
+}
+
+/* 02.3 Navigation 		 						 */
+/*-----------------------------------------------*/
+#navigation-window {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #560C90;
+    display: none;
+}
+
+#navigation-window.open {
+    display: block;
+}
+
+#navigation-title {
+    font-weight: 800;
+    font-size: 63px;
+    margin-bottom: 70px;
+}
+
+#nav-menu {
+    list-style-type: none;
+    text-align: center;
+    font-size: 28px;
+    padding: 0;
+    color: #FFF
+}
+
+#nav-menu li {
+    margin-bottom: 45px;
+}
+
+#nav-menu li.current a {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+#nav-menu li a {
+    color: #FFF;
+}
+
+#nav-menu li a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+#closemenu-wrapper {
+    position: fixed;
+    top: 25px;
+    right: 40px;
+}
+
+#closemenu {
+    font-size: 35px;
+    color: #FFF
+}
+
+#closemenu i {
+    opacity: 1;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#closemenu:hover i {
+    opacity: 0.7;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+/*===============================================*/
+/* 03. CONTENT	  		 						 */
+/*===============================================*/
+#page-content {
+    width: 1600px;
+    margin: 0 auto;
+    padding: 130px 0 130px 0;
+}
+
+#page-content.fullwidth {
+    width: 100% !important;
+}
+
+/*===============================================*/
+/* 04. FOOTER	  		 						 */
+/*===============================================*/
+#social-media {
+    padding: 36px 0 36px 0;
+    text-align: center;
+}
+
+.socmed-icon {
+    font-size: 26px;
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 42px;
+    opacity: 1
+}
+
+.socmed-icon.-nomargin {
+    margin: 0;
+}
+
+.socmed-icon:hover,
+.socmed-icon:focus {
+    color: #FFF;
+    opacity: 0.7;
+    webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/*===============================================*/
+/* 05. ELEMENT	  		 						 */
+/*===============================================*/
+
+/* 05.1 Photo Item 		 						 */
+/*-----------------------------------------------*/
+.photo-item {
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.photo-item.-desktopnomargin,
+.photo-item.-nomargin {
+    margin-bottom: 0px;
+}
+
+.photo-item .overlay-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-image: linear-gradient(to bottom right, rgba(40, 2, 71, 0.62), #4B0284);
+    /*border: solid 4px #33b874;*/
+    webkit-transition: opacity 0.2s ease;
+    -moz-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.photo-item .overlay-caption.-noborder {
+    border: none;
+}
+
+.photo-item:hover .overlay-caption {
+    opacity: 1;
+}
+
+.overlay-caption .phototitle {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 17px
+}
+
+.overlay-caption .photocaption {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+/* 05.2  Align Middle Wrapper					 */
+/* ----------------------------------------------*/
+.align-middle {
+    position: absolute;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.v-align {
+    display: table-cell;
+}
+
+.-oncenter {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.-ontop {
+    vertical-align: top;
+    text-align: center;
+}
+
+.-onbottom {
+    vertical-align: bottom;
+    text-align: center;
+}
+
+/* 05.3 Button									 */
+/* ----------------------------------------------*/
+.default-button {
+    display: inline-block;
+    background-color: #FFF;
+    padding: 4px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 27px;
+    color: #560C90;
+    text-decoration: none;
+    webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border: none;
+    margin-top: 40px;
+}
+
+.default-button:hover,
+.default-button:focus {
+    color: #560C90;
+    text-decoration: none;
+}
+
+/*===============================================*/
+/* 07. CLIENT PAGE	 						 	 */
+/*===============================================*/
+
+.client-box {
+    position: relative;
+    height: 432px;
+    width: 100%;
+    border: 3px solid #560C90;
+    border-right: none;
+    border-bottom: none;
+}
+
+.client-box.-rightborder {
+    border-right: 3px solid #560C90;
+}
+
+.client-box.-bottomborder {
+    border-bottom: 3px solid #560C90;
+}
+
+.quoteicon {
+    font-size: 36px;
+    margin-bottom: 40px;
+    opacity: 0.5;
+}
+
+.theclient {
+    font-size: 24px;
+    margin-top: 42px;
+    opacity: 0.7;
+}
+
+/*===============================================*/
+/* 08. CONTACT PAGE	 						 	 */
+/*===============================================*/
+h2.contact,
+.h2.contact {
+    font-weight: 800;
+    font-size: 54px;
+    padding-bottom: 30px;
+    margin-bottom: 65px;
+    margin-top: 0;
+    border-bottom: 3px solid #560C90;
+}
+
+.info-item {
+    width: 80%;
+    color: #FFF;
+    margin: 0 0 60px 0;
+}
+
+.info-item.-marginauto {
+    margin: 0 auto 60px auto;
+}
+
+.info-item.-desktopnomargin {
+    margin: 0px;
+}
+
+.info-item.-marginauto.-desktopnomargin {
+    margin: 0 auto 0 auto;
+}
+
+.info-item.-nomargin,
+.info-item.-marginauto.-nomargin {
+    margin: 0px;
+}
+
+.info-item.-floatright {
+    float: right;
+}
+
+.info-item > .thelabel {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.info-item > .theinfo {
+    font-size: 24px;
+    font-weight: 500
+}
+
+#mapbutton-wrapper {
+    text-align: right;
+}
+
+#sendbutton-wrapper {
+    text-align: right;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    color: #FFF;
+    padding: 7px 0;
+    margin-bottom: 80px;
+    border: none;
+    border-bottom: 3px solid #b3e4cb;
+    background-color: transparent
+}
+
+input[type="text"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/*===============================================*/
+/* 09. PROJECT PAGE	 						 	 */
+/*===============================================*/
+.project-detail {
+    padding: 45px 0 55px 0;
+    border-bottom: 3px solid #560C90;
+    border-top: 3px solid #560C90;
+}
+
+/*===============================================*/
+/* 99. MEDIA SCREEN		 						 */
+/*===============================================*/
+
+@media screen and (max-width: 1600px) {
+    /*===============================================*/
+    /* 03. CONTENT	  		 						 */
+    /*===============================================*/
+    #page-content {
+        width: 1366px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    /*===============================================*/
+    /* 01. GENERAL	  		 						 */
+    /*===============================================*/
+    body, p {
+        font-size: 24px;
+    }
+
+    .bg-div {
+        background: url("/images/bg.png") no-repeat center;
+    }
+
+    p {
+        line-height: 48px;
+        margin-bottom: 45px;
+    }
+
+    h1 {
+        font-size: 52px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        list-style-image: url('/images/dot.png');
+    }
+
+
+    ul > li {
+        color: #560C90;
+        margin: 30px 0;
+        list-style-image: url('/images/dot.png');
+    }
+
+    .-rowmargin {
+        margin-bottom: 105px !important;
+    }
+
+    .-rowmarginhalf {
+        margin-bottom: 55px !important;
+    }
+
+    /*===============================================*/
+    /* 02. NAV BAR	  		 						 */
+    /*===============================================*/
+    #nav-bar {
+        padding: 18px 34px 0px 34px;
+    }
+
+    /* 02.1 Logo	  		 						 */
+    /*-----------------------------------------------*/
+    #logo {
+        font-size: 30px;
+    }
+
+    /* 02.2 Menu Icon  		 						 */
+    /*-----------------------------------------------*/
+    .bar {
+        width: 28px;
+        margin-bottom: 4px;
+    }
+
+    #menu-icon:hover .bar {
+        width: 33px;
+    }
+
+    /* 02.3 Navigation 		 						 */
+    /*-----------------------------------------------*/
+    #navigation-title {
+        font-size: 52px;
+        margin-bottom: 63px;
+    }
+
+    #nav-menu {
+        font-size: 24px;
+    }
+
+    #nav-menu li {
+        margin-bottom: 36px;
+    }
+
+    #closemenu-wrapper {
+        top: 25px;
+        right: 40px;
+    }
+
+    #closemenu {
+        font-size: 30px;
+    }
+
+    /*===============================================*/
+    /* 03. CONTENT	  		 						 */
+    /*===============================================*/
+    #page-content {
+        width: 1200px;
+        padding: 105px 0 105px 0;
+    }
+
+    /*===============================================*/
+    /* 04. FOOTER	  		 						 */
+    /*===============================================*/
+    .socmed-icon {
+        font-size: 24px;
+        margin-right: 33px;
+    }
+
+    #social-media {
+        padding: 30px 0 30px 0;
+    }
+
+    /* 05.1 Photo Item 		 						 */
+    /*-----------------------------------------------*/
+    .overlay-caption .phototitle {
+        font-size: 20px;
+        margin-bottom: 3px
+    }
+
+    .overlay-caption .photocaption {
+        font-size: 18px;
+    }
+
+    /* 05.3 Button									 */
+    /* ----------------------------------------------*/
+    .default-button {
+        padding: 5px 30px;
+        font-size: 16px;
+    }
+
+    /*===============================================*/
+    /* 07. CLIENT PAGE	  		 					 */
+    /*===============================================*/
+    .client-box {
+        height: 400px;
+    }
+
+    .client-box img {
+        width: 60%;
+    }
+
+    .quoteicon {
+        font-size: 30px;
+        margin-bottom: 30px;
+        opacity: 0.5
+    }
+
+    .theclient {
+        font-size: 22px;
+        margin-top: 36px;
+        opacity: 0.7
+    }
+
+    /*===============================================*/
+    /* 08. CONTACT PAGE	 						 	 */
+    /*===============================================*/
+    h2.contact,
+    .h2.contact {
+        font-size: 42px;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+    }
+
+    .info-item {
+        margin: 0 0 40px 0;
+    }
+
+    .info-item.-marginauto {
+        margin: 0 auto 40px auto;
+    }
+
+    .info-item > .thelabel {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .info-item > .theinfo {
+        font-size: 21px;
+        line-height: normal;
+    }
+
+    input[type="text"], textarea {
+        margin-bottom: 50px;
+    }
+
+    /*===============================================*/
+    /* 09. PROJECT PAGE	 						 	 */
+    /*===============================================*/
+    #project-portfolio {
+        padding: 10px 0 0 0;
+    }
+
+    #brief-detail p {
+        font-size: 24px;
+        line-height: 45px;
+        margin: 0 0 30px 0;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    /*===============================================*/
+    /* 03. CONTENT	  		 						 */
+    /*===============================================*/
+    #page-content {
+        width: 991px;
+    }
+
+    /*===============================================*/
+    /* 07. CLIENT PAGE	  		 					 */
+    /*===============================================*/
+    .client-box {
+        height: 300px;
+    }
+
+    .client-box img {
+        width: 70%;
+    }
+
+    /* 05.1 Photo Item 		 						 */
+    /*-----------------------------------------------*/
+    .overlay-caption .phototitle {
+        font-size: 21px;
+    }
+
+    .overlay-caption .photocaption {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    /*===============================================*/
+    /* 01. GENERAL	  		 						 */
+    /*===============================================*/
+    .grid-4 {
+        float: none;
+        width: 100%;
+        padding: 0 30px 0 30px;
+    }
+
+    .grid-3 {
+        float: none;
+        width: 100%;
+        padding: 0 30px 0 30px;
+    }
+
+    /*===============================================*/
+    /* 03. CONTENT	  		 						 */
+    /*===============================================*/
+    #page-content {
+        width: 100%;
+    }
+
+    /* 05.1 Photo Item 		 						 */
+    /*-----------------------------------------------*/
+    .photo-item {
+        margin-bottom: 65px !important;
+    }
+
+    .photo-item.-nomargin {
+        margin-bottom: 0px !important;
+    }
+
+    .photo-item .overlay-caption {
+        border: solid 4px #560C90 !important;
+    }
+
+    .overlay-caption .phototitle {
+        font-size: 27px;
+        margin-bottom: 17px
+    }
+
+    .overlay-caption .photocaption {
+        font-size: 21px;
+    }
+
+    /*===============================================*/
+    /* 07. CLIENT PAGE	  		 					 */
+    /*===============================================*/
+    .client-box {
+        border: 3px solid #560C90 !important;
+        margin-bottom: 40px;
+    }
+
+    .client-box.-nomargin {
+        margin-bottom: 0 !important;
+    }
+
+    .client-box img {
+        width: 35%;
+    }
+
+    /*===============================================*/
+    /* 08. CONTACT PAGE	 						 	 */
+    /*===============================================*/
+    .info-item {
+        width: 100%;
+        margin: 0 0 60px 0 !important;
+    }
+
+    .info-item.-nomargin {
+        margin: 0 auto 0 auto !important;
+    }
+
+    .info-item.-marginauto {
+        margin: 0 auto 60px auto !important;
+    }
+
+    .info-item.-floatright {
+        float: none;
+    }
+
+    #mapbutton-wrapper {
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    #sendbutton-wrapper {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    /*===============================================*/
+    /* 09. PROJECT PAGE	 						 	 */
+    /*===============================================*/
+    #brief-label {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    /*===============================================*/
+    /* 07. CLIENT PAGE	  		 					 */
+    /*===============================================*/
+    .client-box img {
+        width: 40%;
+    }
+
+    @media screen and (max-width: 480px) {
+        /*===============================================*/
+        /* 01. GENERAL	  		 						 */
+        /*===============================================*/
+        body, p {
+            font-size: 21px;
+        }
+
+        p {
+            line-height: 37px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 21px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 21px;
+        }
+
+        .-rowmargin {
+            margin-bottom: 60px !important;
+        }
+
+        .-rowmarginhalf {
+            margin-bottom: 30px !important;
+        }
+
+        /*===============================================*/
+        /* 02. NAV BAR	  		 						 */
+        /*===============================================*/
+        #nav-bar {
+            padding: 14px 10px 0px 10px;
+        }
+
+        /* 02.1 Logo	  		 						 */
+        /*-----------------------------------------------*/
+        #logo {
+            font-size: 23px;
+        }
+
+        /* 02.2 Menu Icon  		 						 */
+        /*-----------------------------------------------*/
+        #bar-wrapper {
+            margin-top: 6px;
+        }
+
+        .bar {
+            height: 3px;
+            width: 24px;
+            margin-bottom: 4px;
+        }
+
+        #menu-icon:hover .bar {
+            width: 30px;
+        }
+
+        /* 02.3 Navigation 		 						 */
+        /*-----------------------------------------------*/
+        #navigation-title {
+            font-size: 36px;
+            margin-bottom: 53px;
+        }
+
+        #nav-menu {
+            font-size: 21px;
+        }
+
+        #nav-menu li {
+            margin-bottom: 30px;
+        }
+
+        #closemenu-wrapper {
+            top: 15px;
+            right: 20px;
+        }
+
+        #closemenu {
+            font-size: 21px;
+        }
+
+        /*===============================================*/
+        /* 03. CONTENT	  		 						 */
+        /*===============================================*/
+        #page-content {
+            width: 100%;
+            padding: 60px 0 60px 0;
+        }
+
+        /*===============================================*/
+        /* 04. FOOTER	  		 						 */
+        /*===============================================*/
+        #social-media {
+            padding: 10px 0 10px 0;
+        }
+
+        .socmed-icon {
+            font-size: 21px;
+            margin-right: 20px;
+        }
+
+        /* 05.1 Photo Item 		 						 */
+        /*-----------------------------------------------*/
+        .photo-item.-marginbottom {
+            margin-bottom: 40px !important;
+        }
+
+        .photo-item.-nomargin {
+            margin-bottom: 0px !important;
+        }
+
+        .overlay-caption .phototitle {
+            font-size: 21px;
+            margin-bottom: 12px
+        }
+
+        .overlay-caption .photocaption {
+            font-size: 18px;
+        }
+
+        /* 05.3 Button									 */
+        /* ----------------------------------------------*/
+        .default-button {
+            padding: 14px 20px;
+            font-size: 18px;
+        }
+
+        /*===============================================*/
+        /* 07. CLIENT PAGE	  		 					 */
+        /*===============================================*/
+        .client-box {
+            height: 250px;
+            margin-bottom: 40px;
+        }
+
+        .client-box img {
+            width: 60%;
+        }
+
+        #client-testimonial {
+            margin-bottom: 20px;
+        }
+
+        .quoteicon {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .theclient {
+            font-size: 17px;
+            margin-top: 24px;
+        }
+
+        /*===============================================*/
+        /* 08. CONTACT PAGE	 						 	 */
+        /*===============================================*/
+        h2.contact,
+        .h2.contact {
+            font-size: 30px;
+            padding-bottom: 15px;
+            margin-bottom: 35px;
+        }
+
+        .info-item {
+            margin: 0 0 30px 0 !important;
+        }
+
+        .info-item.-marginauto {
+            margin: 0 auto 30px auto !important;
+        }
+
+        .info-item > .thelabel {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .info-item > .theinfo {
+            font-size: 18px;
+            line-height: normal;
+        }
+
+        #mapbutton-wrapper {
+            text-align: left;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        input[type="text"], textarea {
+            margin-bottom: 30px;
+            padding: 4px;
+        }
+
+        #sendbutton-wrapper {
+            text-align: left;
+            margin-top: 14px;
+        }
+
+        /*===============================================*/
+        /* 09. PROJECT PAGE	 						 	 */
+        /*===============================================*/
+        .project-detail {
+            padding: 30px 0 30px 0;
+        }
+
+        #project-portfolio {
+            padding: 10px 0 0 0;
+        }
+
+        #brief-label {
+            margin-bottom: 10px;
+        }
+
+        #brief-detail p {
+            font-size: 18px;
+            line-height: 30px;
+            margin: 0 0 13px 0;
+        }
+    }
+}
