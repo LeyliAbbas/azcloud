@@ -51,6 +51,16 @@
 /*===============================================*/
 /* 01. GENERAL	  		 						 */
 /*===============================================*/
+
+@font-face {
+    font-family: Museo;
+    src: url(../fonts/827f2f08-a8d3-40b2-9795-927b59905269.woff);
+}
+
+* {
+    font-family: Museo;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -60,16 +70,30 @@ body {
     font-weight: 500;
 }
 
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 h1 {
-    font-size: 63px;
+    font-size: 40px;
     color: #560C90;
     margin-bottom: 36px;
 }
 
 h2 {
-    font-size: 54px;
-    margin-bottom: 36px;
+    font-size: 30px !important;
+    margin-bottom: 20px;
     color: #560C90;
+    font-weight: 400 !important;
+}
+
+h5 {
+    color: #C4A2DE;
+    margin-top: 16px;
+    font-size: 16px;
 }
 
 h1, h2 {
@@ -84,9 +108,27 @@ p {
     margin-bottom: 50px;
 }
 
+ul > li {
+    color: #560C90;
+    font-size: 24px;
+    margin: 30px 0;
+    padding-left: 50px;
+    list-style: none;
+    background-image: url(../images/dot.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 28px;
+}
+
 a, a:hover, a:active, a:focus {
-    color: #FFF;
+    color: #560C90;
     text-decoration: underline;
+}
+
+.team-member-img {
+    -webkit-box-shadow: 0 15px 6px -6px rgba(29, 0, 255, 0.32);
+    -moz-box-shadow: 0 15px 6px -6px rgba(29, 0, 255, 0.32);
+    box-shadow: 0 15px 6px -6px rgba(29, 0, 255, 0.32);
 }
 
 .fullwidth {
@@ -279,7 +321,11 @@ a, a:hover, a:active, a:focus {
 #page-content {
     width: 1600px;
     margin: 0 auto;
-    padding: 130px 0 130px 0;
+    padding: 90px 0 130px 0;
+}
+
+#home-title {
+    margin-bottom: 80px;
 }
 
 #page-content.fullwidth {
@@ -355,14 +401,14 @@ a, a:hover, a:active, a:focus {
 
 .overlay-caption .phototitle {
     color: #fff;
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 17px
+    margin-bottom: 3px
 }
 
 .overlay-caption .photocaption {
     color: #fff;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -570,24 +616,13 @@ textarea:focus {
     }
 
     h1 {
-        font-size: 52px;
-        margin-bottom: 30px;
+        font-size: 40px;
+        margin-bottom: 20px;
     }
 
     h2 {
-        font-size: 42px;
-        margin-bottom: 30px;
-    }
-
-    ul {
-        list-style-image: url('/images/dot.png');
-    }
-
-
-    ul > li {
-        color: #560C90;
-        margin: 30px 0;
-        list-style-image: url('/images/dot.png');
+        font-size: 30px !important;
+        margin-bottom: 20px;
     }
 
     .-rowmargin {
